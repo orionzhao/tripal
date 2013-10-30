@@ -5,6 +5,7 @@
 		
 		<!-- Link to stylesheets -->
 		<link rel=stylesheet media=screen type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+    <link rel=stylesheet media=screen type=text/css href="{{ url_for('static', filename='css/style.css') }}" >
 		<script src="{{ url_for('static', filename='js/jquery.js') }}"> </script>
 		<script src="{{ url_for('static', filename='js/bootstrap.js') }}"> </script>
 		<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"> </script>
@@ -21,18 +22,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{url_for('index')}}">Tripal</a>
+            <a class="navbar-brand" href="{{url_for('index')}}">Home</a>
           </div>
           <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
              
-              <li><a href="{{url_for('index')}}">Home</a></li>
-              
-              
-              <li><a href="{{url_for('example')}}">Example</a></li>
-            
-            
-              <li><a href="{{url_for('facebook')}}">FaceBook</a></li>
+              <li><a href="{{url_for('index')}}">Nearby</a></li>
+              <li><a href="{{url_for('index')}}">City Forum</a></li>
+              <li><a href="{{url_for('index')}}">Inbox</a></li>
+              <li><a href="{{url_for('index')}}">Friends</a></li>
+              <li><a href="{{url_for('index')}}">Settings</a></li>
 
               </li>
             </ul>
