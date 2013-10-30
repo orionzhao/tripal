@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title> TriPal </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        
+        <!-- Link to stylesheets -->
+        <link rel=stylesheet media=screen type=text/css href="{{ url_for('static', filename='css/bootstrap.min.css') }}" >
+        <script src="{{ url_for('static', filename='js/jquery.js') }}"> </script>
+        <script src="{{ url_for('static', filename='js/bootstrap.js') }}"> </script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"> </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+
+    <style>
+
+        /* http://css-tricks.com/perfect-full-page-background-image/ */
+        html {
+            background: url({{ url_for('static', filename='img/background.jpg') }}) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        body {
+            padding-top: 20px;
+            font-size: 16px;
+            background: transparent;
+        }
+
+        /* Override B3 .panel adding a subtly transparent background */
+        .panel {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .margin-base-vertical {
+            margin: 40px 0;
+        }
+
+    </style>
+    <div class="container">
+    	<div class="row">
+    		<div class="col-lg-6 col-lg-offset-3 panel">
+    			<h1 style="text-align: center" class="margin-base-vertical">TriPal</h1>
+
+                    <p style="text-align: center; margin-bottom: 30px; margin-top: 30px;">
+                    <button type="button" class="btn btn-info" href="/index.html">Sign in with Facebook</button>   
+                    <form class="margin-base-vertical">
+                        <p class="input-group">
+                            <span class="input-group-addon"><span class=".glyphicon .glyphicon-collapse-down"></span></span>
+                            <input type="text" class="form-control input-large" name="email" placeholder="yourname@gmail.com" />
+                            <input type="text" class="form-control input-large" name="email" placeholder="your password" />
+                        </p>
+                    </form>
+                    <p style="text-align: center; margin-bottom: 30px; margin-top: 30px;">
+                    <button type="button" class="btn btn-success">Create New Account</button>                  
+                    <p>
+    		</div>
+    	</div>
+    </div>
+</html>

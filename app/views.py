@@ -37,9 +37,9 @@ def friend_profile():
 def friend_profile():
 	return render_template('friend_profile.html')
 
-@app.route('/log_in/')
-def log_in():
-	return render_template('log_in.html')
+@app.route('/login/')
+def login():
+	return render_template('login.html')
 
 @app.route('/nearby_traveler/')
 def nearby_traveler():
